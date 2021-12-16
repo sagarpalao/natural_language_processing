@@ -4,7 +4,7 @@ The entire code base is in a single notebook: code/NLP_Project.ipynb. The experi
 
 Data: To run the notebook, you will need to load data in your Colab session. 
 To upload data in Colab session, 
-- Clik Files icon on left side of the Colab > Upload to Session.
+- Click Files icon on left side of the Colab > Upload to Session.
 - Upload the data/nlp_data.csv file in the session.
 
 
