@@ -1,5 +1,3 @@
-# Run it from the code directory
-
 import argparse
 from bs4 import BeautifulSoup
 import re
