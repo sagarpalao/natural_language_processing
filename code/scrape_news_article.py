@@ -7,8 +7,8 @@ import time
 import requests
 
 parser = argparse.ArgumentParser(description='Program to scrape the news articles for the links')
-parser.add_argument('-l','--links', help='Path to link files', required=True)
-parser.add_argument('-r','--results', help='Path to result files', required=True)
+parser.add_argument('-l','--links', help='Path to links file', required=True)
+parser.add_argument('-r','--results', help='Path to results file', required=True)
 args = vars(parser.parse_args())
 
 text_file = open(args['links'], "r")
