@@ -1,17 +1,23 @@
 # Run it from the code directory
 
-text_file = open("../data/sample_links", "r")
+import argparse
+from bs4 import BeautifulSoup
+import re
+import time
+import requests
+
+parser = argparse.ArgumentParser(description='Program to scrape the news articles for the links')
+parser.add_argument('-l','--links', help='Path to link files', required=True)
+parser.add_argument('-r','--results', help='Path to result files', required=True)
+args = vars(parser.parse_args())
+
+text_file = open(args['links'], "r")
 data = text_file.read()
 text_file.close()
 
-with open("../data/sample_article_body", "w") as f:
+with open(args['results'], "w") as f:
 
     links = data.splitlines()
-
-    from bs4 import BeautifulSoup
-    import re
-    import time
-    import requests
 
     for l in links:
         time.sleep(1)
