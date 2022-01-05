@@ -7,7 +7,7 @@ To upload data in Colab session,
 - Click Files icon on left side of the Colab > Upload to Session.
 - Upload the data/nlp_data.csv file in the session.
 
-There are 2 cells in the notebook which take very long time to execute.
+There are 2 cells in the notebook which take a very long time to execute.
 - Generate summaries (The cell which starts with the comment # Generate summaries)
 - Augment training data (The cell which starts with the comment # Augment training data)
 
@@ -15,13 +15,13 @@ In order to save time in reproducing code, we have saved the csv files generated
 - data/nlp_data_with_summary.csv
 - data/nlp_data_data_augmented.csv 
 
-in the Colab session as described above and skip these execution of the above two cells.
+in the Colab session as described above and skip the execution of the above two cells.
 
 ---
 
 Also, we wrote a small python script in code/scrape_news_article.py to scrape news article body as a part of our data collection process.
 
-The code accepts 2 arguments --links and --results, which are the file paths to the links file and the results file. It reads links from the links file and write results to the results file.
+The code accepts 2 arguments --links and --results, which are the file paths to the links file and the results file. It reads links from the links file and writes results to the results file.
 
 To try it out, one may use below sample files:
 ```
